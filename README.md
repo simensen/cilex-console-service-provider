@@ -26,7 +26,7 @@ Usage
 ```php
 <?php
 
-use Cilex\Pimple\Provider\Console\ConsoleServiceProvider;
+use Cilex\Provider\Console\ConsoleServiceProvider;
 
 $app = new Pimple;
 
@@ -44,7 +44,7 @@ a proxy Silex Service Provider to use the Console Service Provider.
 ```php
 <?php
 
-use Cilex\Pimple\Provider\Console\Adapter\Silex\ConsoleServiceProvider;
+use Cilex\Provider\Console\Adapter\Silex\ConsoleServiceProvider;
 use Silex\Application;
 
 $app = new Application;
@@ -97,7 +97,7 @@ The Console Service Provider Application Class
 ----------------------------------------------
 
 By default Console Service Provider will instantiate an instance of
-`Cilex\Pimple\Provider\Console\Application`.
+`Cilex\Provider\Console\ContainerAwareApplication`.
 
 ### Methods
 
